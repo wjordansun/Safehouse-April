@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Safehouse UI!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="ui.css">  
+</head>
+<body style="background: rgb(30, 30, 30);">
+    <h1 class="title">SafeHouse</h1>
+    <div class="content">
+        <h2>Proxy setup</h2>
+        <form name="ipcForm">
+            <table class="form-table">
+                <tr>
+                  <th>
+                    <label for="config_path">Config file:</label><br>
+                    <input type="text" id="config_path" name="config_path"><br>
+                  </th>
+                  <th>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="honey_ip">Honeypot ip:</label><br>
+                    <input type="text" id="honey_ip" name="honey_ip"><br>
+                  </th>
+                  <th>
+                    <label for="honey_port">Honeypot port:</label><br>
+                    <input type="number" id="honey_port" name="honey_port"><br>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="production_ip">Production ip:</label><br>
+                    <input type="text" id="production_ip" name="production_ip"><br>
+                  </th>
+                  <th>
+                    <label for="production_port">Production port:</label><br>
+                    <input type="number" id="production_port" name="production_port"><br>
+                  </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="listen_on">Listen on:</label><br>
+                        <input type="number" id="listen_on" name="listen_on"><br>
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="verbose" name="verbose">
+                        <label for="verbose"> Verbose logs</label><br>
+                    </th>
+                    <th>
+                        <input type="checkbox" id="log_to_console" name="log_to_console">
+                        <label for="log_to_console"> Log to console</label><br>
+                    </th>
+                </tr>
+                <tr>
+                    <th>      
+                        <label for="log_path">Log path:</label><br>
+                        <input type="text" id="log_path" name="log_path"><br>
+                    </th>
+                    <th>
+                      <label for="schema">Schema template file:</label><br>
+                      <input type="text" id="schema" name="schema"><br>
+                    </th>
+                </tr>
+            </table> 
+            <br>
+            <label for="config">Proxy behavior:</label><br>
+            <textarea name="config" id="config" rows="10" cols="30"> {"required_keys": [], "forbidden_keys": ["code"], "forbid_operators": false, "forbidden_ips": []}
+            </textarea> 
+            <br><br>
+            <table class="form-table">
+              <tr>
+                <th>      
+                  <input id="submit-populate" type="submit" value="Populate honeypot" class="submit-button" style="background-color: rgb(20,20,20);" onclick="JavaScript:sendForm(event, true)">
+                </th>
+                <th>
+                  <input id="submit" type="submit" value="Begin proxy" class="submit-button" style="background-color: rgb(225,75,75);" onclick="JavaScript:sendForm(event, false)">
+                </th>
+              </tr>
+            </table>
+            <br>
+        </form> 
+    </div>
+    <script src='ui-render.js'></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "database_1": {
+    "collection_1": {
+      "DOC_COUNT": 20,
+      "DATA": {
+        "first_name": "FIRST_NAME()",
+        "last_name": "SURNAME()",
+        "address": {
+          "house_number": "INTEGER(1, 2500)",
+          "street": "STREET()",
+          "city": "CITY()",
+          "state": "STATE()"
+        }
+      }
+    },
+    "collection_2": {
+      "DOC_COUNT": 20,
+      "DATA": {
+        "age": "INTEGER(16, 85)",
+        "eye_color": "RANDOM([\"blue\", \"green\", \"brown\", \"other\"])",
+        "percentage": "FLOAT(0, 100)",
+        "enrolled": "BOOL()"
+      }
+    }
+  },
+  "database_2": {
+    "collection_3": {
+      "DOC_COUNT": 15,
+      "DATA": {
+        "friends": [
+          "FULL_NAME()",
+          "FULL_NAME()",
+          "FULL_NAME()"
+        ]
+      }
+    }
+  }
+}

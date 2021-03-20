@@ -1,0 +1,57 @@
+@font-face {
+    font-family: nilland-bold;
+    src: url("./Nilland-Bold.ttf")
+  }
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: nilland-bold, sans-serif;
+}
+
+h2 {
+    color: rgb(225, 75, 75);
+    font-size: 30px;
+    font-family: nilland-bold, sans-serif;
+}
+
+p, label {
+    font-size: 20px;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 5px;
+}
+
+.content {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.form-table {
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+
+tr {
+    height: 60px;
+}
+
+.submit-button {
+    color: white;
+    border: white;
+    border-width: 2px;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
