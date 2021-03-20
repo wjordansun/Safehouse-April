@@ -1,21 +1,23 @@
 {
-    "schema_file": "schema.json",
-    "log_path": "safehouse.log",
-    "verbose": false,
-    "log_to_console": true,
-    "listen_on": 27016,
-    "honeypot": {
-        "ip": "127.0.0.1",
-        "port": 27017
-    },
-    "production": {
-        "ip": "127.0.0.1",
-        "port": 27018
-    },
-    "proxy_behavior": {
-        "required_keys": [], 
-        "forbidden_keys": ["code"], 
-        "forbid_operators": true, 
-        "forbidden_ips": []
-    }
+  "schema_file": "schema.json",
+  "log_path": "safehouse.log",
+  "verbose": false,
+  "log_to_console": true,
+  "listen_on": 27016,
+  "honeypot": {
+    "ip": "52.2.224.7",
+    "port": 27017
+  },
+  "production": {
+    "ip": "127.0.0.1",
+    "port": 27018
+  },
+  "proxy_behavior": {
+    "required_keys": [],
+    "forbidden_keys": [
+      "code"
+    ],
+    "forbid_operators": true,
+    "forbidden_ips": []
+  }
 }

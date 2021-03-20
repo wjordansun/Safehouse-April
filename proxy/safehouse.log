@@ -1,0 +1,82 @@
+[2021-03-20T21:30:32.937Z] Proxy listening on 27016...
+[2021-03-20T21:31:36.844Z] ERROR: failed to proxy ::ffff:127.0.0.1:55555 to production server
+[2021-03-20T21:31:36.847Z] Production server disconnected from ::ffff:127.0.0.1:55555 due to transmission error
+[2021-03-20T21:31:36.927Z] [::ffff:127.0.0.1:55555 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:31:46.927Z] ::ffff:127.0.0.1:55555 disconnected (no error)
+[2021-03-20T21:31:46.930Z] [::ffff:127.0.0.1:55570 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:31:46.930Z] ERROR: failed to proxy ::ffff:127.0.0.1:55570 to production server
+[2021-03-20T21:31:46.931Z] Production server disconnected from ::ffff:127.0.0.1:55570 due to transmission error
+[2021-03-20T21:31:56.939Z] ERROR: failed to proxy ::ffff:127.0.0.1:55586 to production server
+[2021-03-20T21:31:56.939Z] Production server disconnected from ::ffff:127.0.0.1:55586 due to transmission error
+[2021-03-20T21:31:56.939Z] ::ffff:127.0.0.1:55570 disconnected (no error)
+[2021-03-20T21:31:56.942Z] [::ffff:127.0.0.1:55586 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:31:57.443Z] ERROR: failed to proxy ::ffff:127.0.0.1:55590 to production server
+[2021-03-20T21:31:57.443Z] Production server disconnected from ::ffff:127.0.0.1:55590 due to transmission error
+[2021-03-20T21:31:57.444Z] [::ffff:127.0.0.1:55590 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:32:06.942Z] ::ffff:127.0.0.1:55586 disconnected (no error)
+[2021-03-20T21:32:07.449Z] ::ffff:127.0.0.1:55590 disconnected (no error)
+[2021-03-20T21:35:28.650Z] Proxy listening on 27016...
+[2021-03-20T21:35:34.374Z] Production server disconnected from ::ffff:127.0.0.1:55678 due to transmission error
+[2021-03-20T21:35:34.374Z] ERROR: failed to proxy ::ffff:127.0.0.1:55678 to production server
+[2021-03-20T21:35:34.388Z] ERROR: failed to proxy ::ffff:127.0.0.1:55678 to honeypot
+[2021-03-20T21:35:34.388Z] Honeypot disconnected from ::ffff:127.0.0.1:55678 due to transmission error
+[2021-03-20T21:35:34.396Z] [::ffff:127.0.0.1:55678 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:35:44.404Z] [::ffff:127.0.0.1:55683 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:35:44.404Z] ERROR: failed to proxy ::ffff:127.0.0.1:55683 to production server
+[2021-03-20T21:35:44.403Z] ::ffff:127.0.0.1:55678 disconnected (no error)
+[2021-03-20T21:35:44.405Z] Production server disconnected from ::ffff:127.0.0.1:55683 due to transmission error
+[2021-03-20T21:35:44.421Z] Honeypot disconnected from ::ffff:127.0.0.1:55683 due to transmission error
+[2021-03-20T21:35:44.421Z] ERROR: failed to proxy ::ffff:127.0.0.1:55683 to honeypot
+[2021-03-20T21:35:54.408Z] ERROR: failed to proxy ::ffff:127.0.0.1:55688 to production server
+[2021-03-20T21:35:54.410Z] [::ffff:127.0.0.1:55688 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:35:54.409Z] Production server disconnected from ::ffff:127.0.0.1:55688 due to transmission error
+[2021-03-20T21:35:54.409Z] ::ffff:127.0.0.1:55683 disconnected (no error)
+[2021-03-20T21:35:54.423Z] ERROR: failed to proxy ::ffff:127.0.0.1:55688 to honeypot
+[2021-03-20T21:35:54.423Z] Honeypot disconnected from ::ffff:127.0.0.1:55688 due to transmission error
+[2021-03-20T21:35:54.916Z] Production server disconnected from ::ffff:127.0.0.1:55691 due to transmission error
+[2021-03-20T21:35:54.915Z] ERROR: failed to proxy ::ffff:127.0.0.1:55691 to production server
+[2021-03-20T21:35:54.917Z] [::ffff:127.0.0.1:55691 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T21:35:54.932Z] ERROR: failed to proxy ::ffff:127.0.0.1:55691 to honeypot
+[2021-03-20T21:35:54.932Z] Honeypot disconnected from ::ffff:127.0.0.1:55691 due to transmission error
+[2021-03-20T21:36:04.411Z] ::ffff:127.0.0.1:55688 disconnected (no error)
+[2021-03-20T21:36:04.920Z] ::ffff:127.0.0.1:55691 disconnected (no error)
+[2021-03-20T22:01:56.755Z] Proxy listening on 27016...
+[2021-03-20T22:12:07.700Z] Proxy listening on 27016...
+[2021-03-20T22:12:15.092Z] ERROR: failed to proxy ::ffff:127.0.0.1:56400 to production server
+[2021-03-20T22:12:15.092Z] Production server disconnected from ::ffff:127.0.0.1:56400 due to transmission error
+[2021-03-20T22:12:15.114Z] ERROR: failed to proxy ::ffff:127.0.0.1:56400 to honeypot
+[2021-03-20T22:12:15.115Z] Honeypot disconnected from ::ffff:127.0.0.1:56400 due to transmission error
+[2021-03-20T22:12:15.150Z] [::ffff:127.0.0.1:56400 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T22:12:25.155Z] ::ffff:127.0.0.1:56400 disconnected (no error)
+[2021-03-20T22:12:25.162Z] ERROR: failed to proxy ::ffff:127.0.0.1:56408 to production server
+[2021-03-20T22:12:25.162Z] Production server disconnected from ::ffff:127.0.0.1:56408 due to transmission error
+[2021-03-20T22:12:25.163Z] [::ffff:127.0.0.1:56408 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T22:12:25.175Z] ERROR: failed to proxy ::ffff:127.0.0.1:56408 to honeypot
+[2021-03-20T22:12:25.175Z] Honeypot disconnected from ::ffff:127.0.0.1:56408 due to transmission error
+[2021-03-20T22:12:35.169Z] ERROR: failed to proxy ::ffff:127.0.0.1:56416 to production server
+[2021-03-20T22:12:35.169Z] ::ffff:127.0.0.1:56408 disconnected (no error)
+[2021-03-20T22:12:35.170Z] Production server disconnected from ::ffff:127.0.0.1:56416 due to transmission error
+[2021-03-20T22:12:35.170Z] [::ffff:127.0.0.1:56416 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T22:12:35.180Z] Honeypot disconnected from ::ffff:127.0.0.1:56416 due to transmission error
+[2021-03-20T22:12:35.180Z] ERROR: failed to proxy ::ffff:127.0.0.1:56416 to honeypot
+[2021-03-20T22:12:35.677Z] ERROR: failed to proxy ::ffff:127.0.0.1:56420 to production server
+[2021-03-20T22:12:35.677Z] Production server disconnected from ::ffff:127.0.0.1:56420 due to transmission error
+[2021-03-20T22:12:35.676Z] [::ffff:127.0.0.1:56420 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T22:12:35.689Z] ERROR: failed to proxy ::ffff:127.0.0.1:56420 to honeypot
+[2021-03-20T22:12:35.690Z] Honeypot disconnected from ::ffff:127.0.0.1:56420 due to transmission error
+[2021-03-20T22:12:45.173Z] ::ffff:127.0.0.1:56416 disconnected (no error)
+[2021-03-20T22:12:45.678Z] ::ffff:127.0.0.1:56420 disconnected (no error)
+[2021-03-20T22:22:19.811Z] Proxy listening on 27016...
+[2021-03-20T22:22:27.274Z] Production server disconnected from ::ffff:127.0.0.1:56586 due to transmission error
+[2021-03-20T22:22:27.274Z] ERROR: failed to proxy ::ffff:127.0.0.1:56586 to production server
+[2021-03-20T22:22:27.282Z] ERROR: failed to proxy ::ffff:127.0.0.1:56586 to honeypot
+[2021-03-20T22:22:27.283Z] Honeypot disconnected from ::ffff:127.0.0.1:56586 due to transmission error
+[2021-03-20T22:22:27.296Z] [::ffff:127.0.0.1:56586 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T22:22:37.297Z] ::ffff:127.0.0.1:56586 disconnected (no error)
+[2021-03-20T22:22:37.301Z] ERROR: failed to proxy ::ffff:127.0.0.1:56591 to production server
+[2021-03-20T22:22:37.302Z] Production server disconnected from ::ffff:127.0.0.1:56591 due to transmission error
+[2021-03-20T22:22:37.302Z] [::ffff:127.0.0.1:56591 -> proxy] QUERY request. COLLECTION NAME: "admin.$cmd\u0000" QUERY: [{"ismaster":true,"client":{"driver":{"name":"nodejs","version":"3.6.4"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"19.4.0"},"platform":"'Node.js v15.4.0, LE (unified)"},"compression":[]}]
+[2021-03-20T22:22:37.315Z] ERROR: failed to proxy ::ffff:127.0.0.1:56591 to honeypot
+[2021-03-20T22:22:37.315Z] Honeypot disconnected from ::ffff:127.0.0.1:56591 due to transmission error
+[2021-03-20T22:22:43.239Z] ::ffff:127.0.0.1:56591 disconnected (no error)
+[2021-03-20T22:28:16.958Z] Proxy listening on 27016...
