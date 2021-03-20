@@ -1,0 +1,52 @@
+.background {
+   position: absolute; top: 0; left: 0;
+   width: 100%; height: 100%;
+   background-image: linear-gradient(to bottom right, rgb(0, 255, 242), rgb(0, 140, 255));
+}
+
+.banner {
+   position: absolute;
+   text-align: center;
+   width: 20%;
+   left: 39%;
+   top: 20%;
+}
+
+input[type=text], input[type=username] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   border-radius: 25px;
+}
+
+.Username {
+   padding: 20px 20px;
+   position: absolute;
+   width: 20%;
+   left: 38.5%;
+   top: 30%;
+}
+button {
+   background-color: #001aff;
+   border-radius: 25px;
+   color: white;
+   padding: 14px 128px;
+   margin: auto;
+   border: none;
+   cursor: pointer;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+.checkbox {
+   text-align: center;
+   width: 20%;
+   left: 40%;
+   top: 70%;
+   
+}
