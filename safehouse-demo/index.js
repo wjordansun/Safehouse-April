@@ -7,16 +7,26 @@ const MongoClient = mongo.MongoClient;
 app.use(express.static('./'))
 
 MongoClient.connect("mongodb://127.0.0.1:27016", {useUnifiedTopology: true})
-.then(client => {
+  .then(client => {
+    let loggedIn = false;
     console.log("Connected to database");
 
-    const db = client.db('login_info')
+    const db = client.db('accounts')
 
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json()); 
 
     app.get('/', (req, res) => {
+        loggedIn = false;
         res.sendFile(__dirname + '/index.html');
+    });
+    
+    app.get('/loggedIn', (req, res) => {
+      if (loggedIn) { res.sendFile(__dirname + '/login_success.html') }
+      else {
+        res.redirect('/')
+      }
+            
     });
     
     app.post('/', (req, res) => {
@@ -38,10 +48,11 @@ MongoClient.connect("mongodb://127.0.0.1:27016", {useUnifiedTopology: true})
 
         console.log(query);
 
-        db.collection('login_info').findOne(query)
+        db.collection('userAndPass').findOne(query)
         .then(result => {
             if (result) {
-                res.sendFile(__dirname + '/login_success.html');
+                loggedIn = true;
+                res.redirect('/loggedIn');
             }
             else {
                 res.sendFile(__dirname + '/index.html');
@@ -52,6 +63,11 @@ MongoClient.connect("mongodb://127.0.0.1:27016", {useUnifiedTopology: true})
             console.error(error);
             res.sendFile(__dirname + '/index.html');
         });
+    });
+
+    app.post('/loggedIn', (req, res) => {
+      loggedIn = false;
+      res.redirect('/');
     });
     
     app.listen(3000, function() {
