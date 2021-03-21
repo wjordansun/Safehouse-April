@@ -5,7 +5,7 @@
   "log_to_console": true,
   "listen_on": 27016,
   "honeypot": {
-    "ip": "127.0.0.1",
+    "ip": "52.2.224.7",
     "port": 27017
   },
   "production": {
