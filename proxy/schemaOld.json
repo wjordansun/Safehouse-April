@@ -10,11 +10,23 @@
           "street": "STREET()",
           "city": "CITY()",
           "state": "STATE()"
-        },
+        }
+      }
+    },
+    "collection_2": {
+      "DOC_COUNT": 20,
+      "DATA": {
         "age": "INTEGER(16, 85)",
         "eye_color": "RANDOM([\"blue\", \"green\", \"brown\", \"other\"])",
         "percentage": "FLOAT(0, 100)",
-        "enrolled": "BOOL()",
+        "enrolled": "BOOL()"
+      }
+    }
+  },
+  "database_2": {
+    "collection_3": {
+      "DOC_COUNT": 15,
+      "DATA": {
         "friends": [
           "FULL_NAME()",
           "FULL_NAME()",
