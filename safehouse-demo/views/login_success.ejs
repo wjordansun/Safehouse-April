@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+</head>
+<body>
+    <div class="background">
+      <div>
+        <form action="/loggedIn" method="POST">
+                <div>
+                    <button class="logout" type="submit">Logout</button>
+                </div>
+        </form>
+      </div>
+      <div class="title">
+            <h1>Login successful!</h1>
+      </div>
+      <ul class="info">
+		  <!-- Loop through quotes -->
+	    	<% for(var i = 0; i < info.length; i++) {%>
+			    <li class="info">
+			    	<span><%= info[i].first_name %></span>
+            <span><%= info[i].last_name %></span> 
+            <span><%= info[i].address.house_number %></span>
+            <span><%= info[i].address.street %></span>
+            <span><%= info[i].address.city %></span>
+            <span><%= info[i].address.state %></span>
+          </li>
+	    	<% } %>
+      </ul>
+    </div>
+</body>
+</html>

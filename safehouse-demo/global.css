@@ -12,6 +12,14 @@
    top: 20%;
 }
 
+.title {
+   position: absolute;
+   text-align: center;
+   width: 20%;
+   left: 20%;
+   top: 20%;
+}
+
 input[type=text], input[type=username] {
    width: 100%;
    padding: 12px 20px;
@@ -29,7 +37,7 @@ input[type=text], input[type=username] {
    left: 38.5%;
    top: 30%;
 }
-button {
+.submit {
    background-color: #001aff;
    border-radius: 25px;
    color: white;
@@ -41,6 +49,20 @@ button {
 
 button:hover {
    opacity: 0.8;
+}
+
+.logout{
+   background-color: #001aff;
+   font-size: 20px;
+   border-radius: 25px;
+   color: white;
+   position:fixed;
+   padding: 14px 40px; 
+   right:10px;
+   top:5px;
+   margin: auto;
+   border: none;
+   cursor: pointer;
 }
 
 .checkbox {

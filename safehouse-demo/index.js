@@ -11,19 +11,31 @@ MongoClient.connect("mongodb://127.0.0.1:27016", {useUnifiedTopology: true})
     let loggedIn = false;
     console.log("Connected to database");
 
-    const db = client.db('accounts')
+    const db = client.db('accounts');
+    const accountsCollection = db.collection('userAndPass');
 
+    const db1 = client.db('database_1');
+    const collection_1 = db1.collection('collection_1');
+
+
+
+    app.set('view engine', 'ejs');
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json()); 
 
     app.get('/', (req, res) => {
         loggedIn = false;
-        res.sendFile(__dirname + '/index.html');
+        res.render('/index.ejs');
     });
     
     app.get('/loggedIn', (req, res) => {
-      if (loggedIn) { res.sendFile(__dirname + '/login_success.html') }
-      else {
+      if (loggedIn) {
+        db1.collection('collection_1').find().toArray()
+ 			    .then(results => {
+ 				    res.render('login_success.ejs', { info: results })
+ 			    })
+          .catch(error => console.error(error))
+      } else {
         res.redirect('/')
       }
             
