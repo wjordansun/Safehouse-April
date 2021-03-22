@@ -5,8 +5,8 @@
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="global.css">
 </head>
-<body>
-    <div class="background">
+<body class="loginbackground">
+    <div>
       <div>
         <form action="/loggedIn" method="POST">
                 <div>
@@ -17,10 +17,20 @@
       <div class="title">
             <h1>Login successful!</h1>
       </div>
-      <ul class="info">
-		  <!-- Loop through quotes -->
+      <div class="category">
+        <div>Name</div>
+        <div>Address</div>
+        <div>Age</div>
+        <div>Eye</div>
+        <div>Percentage</div>
+        <div>Enrolled</div>
+        <div>Friends</div>
+      </div>
+      <ul>
+		  <!-- Loop through info -->
 	    	<% for(var i = 0; i < info.length; i++) {%>
-			    <li class="info">
+			    <li>
+            <div class="info">
 			    	<span><%= info[i].first_name %></span>
             <span><%= info[i].last_name %></span> 
             <span><%= info[i].address.house_number %></span>
@@ -32,6 +42,7 @@
             <span><%= info[i].percentage %></span>
             <span><%= info[i].enrolled %></span>
             <span><%= info[i].friends %></span>
+            </div>
           </li>
 	    	<% } %>
       </ul>
